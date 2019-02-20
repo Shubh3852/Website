@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Snapshot.</title>
+<style type="text/css">
+a:link{color: #cccccc;font-size: x-large;text-decoration: none;padding: 8px;}
+a:visited{color: #cccccc;}
+a:hover{color: blue;}
+header{position: relative;margin-left: 2px;margin-bottom: 20px;}
+</style>
+</head>
+<body>
+  <link rel="shortcut icon" href="Images/black.ico">
+<meta charset="utf-8">
+<body background="images/done.jpg">
+<header>
+<nav>
+<menu style="background-color:black; color:white; text-align:center; border-style:double">
+<b> <a href="home.html" target="_parent"> HOME</a>
+<body alink="green" vlink="white"></body><span>|</span>
+<body alink="green" vlink="red"> </body>
+<a href="new.html" target="_parent"> STORIES</a>
+<body alink="green" vlink="white"></body><span>|</span>
+<a href="quotes.html" target="_parent"> QUOTES </a>
+<body alink="green" vlink="black"> </body><span>|</span>
+<a href="search.html" target="_parent"> SEARCH </a>
+<body alink="green" vlink="red"> </body><span>|</span>
+<a href="original_login.php" target="_parent"> LOG IN </a>
+<body alink="green" vlink="red"> </body><span>|</span>
+<a href="register.php" target="_parent"> REGISTER</a>
+<body alink="green" vlink="red"> </body>
+</b>
+</menu>
+</nav>
+</header>
+<style>
+body {font-family: Verdana, sans-serif;margin: 0}
+* {box-sizing: border-box;}
+.row > .column {padding: 0 8px;}
+.row:after {content: "";display: table;clear: both;}
+.column {float: left;width: 25%;}
+/* This is for modal background */ 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #b0d7c5;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+/* This is for close button */ 
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+
+/* This is for next & prev buttons */ 
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+background-color:rgba(0, 0, 0, 0.8);
+
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+img {margin-bottom: -4px;}
+.caption-container {
+  text-align: center;
+  background-color: #00b867;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {transition: 0.3s}
+.hover-shadow:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+</style>
+<body>
+<font face="Chiller" size="6" color="white"><h1 style="text-align:center">
+Snapshots</h2></font>
+
+<div class="row">
+  <div class="column">
+<img src="photos/a.jpg"style="width:100%"
+onclick="openModal();currentSlide(1)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+<div class="column">
+<img src="photos/b.jpg"style="width:100%"
+onclick="openModal();currentSlide(2)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/c.jpg"style="width:100%"
+onclick="openModal();currentSlide(3)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/d.jpg"style="width:100%"
+onclick="openModal();currentSlide(4)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/e.jpg"style="width:100%"
+onclick="openModal();currentSlide(5)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/f.jpg"style="width:100%"
+onclick="openModal();currentSlide(6)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/g.jpg"style="width:100%"
+onclick="openModal();currentSlide(7)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/h.jpg"style="width:100%"
+onclick="openModal();currentSlide(8)"
+class="hover-shadow cursor">
+</div>
+
+<div class="row">
+  <div class="column">
+<img src="photos/i.jpg"style="width:100%"
+onclick="openModal();currentSlide(9)"
+class="hover-shadow cursor">
+</div>
+<div id="myModal" class="modal">
+<span class="close cursor"
+onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+<div class="mySlides">
+<div class="numbertext">1 / 3</div>
+<img src="photos/a.jpg"style="width:100%">
+</div>
+
+
+<div class="mySlides">
+<div class="numbertext">2 / 3</div>
+<img src="photos/b.jpg"style="width:100%">
+</div> 
+
+<div class="mySlides">
+<div class="numbertext">3 / 3</div>
+<img src="photos/c.jpg"style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 3</div>
+<img src="photos/d.jpg"style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">5 / 3</div>
+<img src="photos/e.jpg"style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">6 / 3</div>
+<img src="photos/f.jpg"style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">7 / 3</div>
+<img src="photos/g.jpg"style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">8 / 3</div>
+<img src="photos/h.jpg"style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">9 / 3</div>
+<img src="photos/i.jpg"style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
+
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
+
+
+<div class="column">
+<img class="demo cursor"
+src="photos/a.jpg" style="width:100%"
+onclick="currentSlide(1)" alt="Gopalpur Sea Beach, Berhampur, Odisha.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/b.jpg" style="width:100%"
+onclick="currentSlide(2)" alt="N.T.R Gardens, Hyderabad, Telangana.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/c.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="Red Fort, New Delhi.">
+</div>
+
+<div class="column"><img >
+<img class="demo cursor"
+src="photos/d.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="Char Minar, Hyderabad, Telangana.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/e.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="N.T.R Gardens, Hyderabad, Telangana.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/f.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="N.T.R Gardens, Hyderabad, Telangana.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/g.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="Red Fort, New Delhi.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/h.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="Bangla Sahib Gurudwara, New Delhi.">
+</div>
+
+<div class="column">
+<img class="demo cursor"
+src="photos/i.jpg" style="width:100%"
+onclick="currentSlide(3)" alt="Bangla Sahib Gurudwara, New Delhi.">
+</div>
+  </div>
+</div>
+
+
+<script>
+
+function openModal() {document.getElementById('myModal').style.display = "block";}
+
+function closeModal() {document.getElementById('myModal').style.display = "none";}
+
+var slideIndex = 1;showSlides(slideIndex);
+
+function plusSlides(n) {showSlides(slideIndex += n);}
+
+function currentSlide(n) {showSlides(slideIndex = n);}
+
+function showSlides(n) {var i;var slides = document.getElementsByClassName("mySlides");var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+
+if (n > slides.length)
+{slideIndex = 1}
+
+if (n < 1) {slideIndex =slides.length}
+
+for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+
+for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active","");}
+
+slides[slideIndex-1].style.display ="block";
+
+dots[slideIndex-1].className +="active";
+
+captionText.innerHTML =dots[slideIndex-1].alt;}
+</script>
+</div>
+</div>
+</div>
+<footer style="background-color:black; color:white; text-align:center; border-style:double">
+<div> <b> <i> &copy Copyright 2017 </i> </b> </div>
+<div> 
+<a href="books.html" target="_blank"> Books </a><span>|</span>
+<a href="contact.html" target="_blank"> Contact Us: </a><span>|</span>
+<a href="images.html"> Snapshots</a><span>|</span> 
+</div>
+</footer>
+</body>
+</html>
